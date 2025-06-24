@@ -16,9 +16,29 @@
         <button id="dark-mode-toggle">Dark mode</button>
     </header>
 
-    
+    <div class="content-wrapper">
 
-    
+     <!--search bar-->
+    <section class="container">
+       <form id="search-form">
+         <input type="text" id="search-input" placeholder="Search for books..." required>
+         <button type="submit">Search</button>
+       </form>
+
+       <div class="books-result">
+        <!--books results will appear here-->
+       </div>
+    </section>
+
+     <!--Shopping cart bar-->
+    <section class="cart-section">
+      <h2>🛒 Shopping Cart</h2>
+      <ul id="cart-list">
+         <li>No items in cart yet.</li>
+      </ul>
+    </section>
+    </div>
+
 <script src="index.js"></script>
 </body>
 </html>
