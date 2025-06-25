@@ -65,3 +65,27 @@ function displayBooks(books) {
         booksContainer.appendChild(bookCard);
     });
 }
+// add book to cart
+function addToCart(title) {
+    cart.push(title);
+    total += 500; // all books are Ksh 500
+    displayCart();
+}
+
+// display the cart
+function displayCart() {
+    cartList.innerHTML = "";
+
+    if (cart.length === 0) {
+        cartList.innerHTML = "<li>No items in cart yet.</li>";
+    } else {
+        cart.forEach((item) => {
+            const li = document.createElement("li");
+            li.textContent = item;
+            cartList.appendChild(li);
+        });
+    }
+
+    totalPriceElement.textContent = total;
+}
+
