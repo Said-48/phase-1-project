@@ -115,3 +115,8 @@ checkoutBtn.addEventListener("click", () => {
     }
 });
 
+// displaying default books
+document.addEventListener("DOMContentLoaded", async () => {
+    const defaultBooks = await fetchBooks("bestsellers");
+    displayBooks(defaultBooks);
+});
