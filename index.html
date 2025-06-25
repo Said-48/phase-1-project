@@ -21,11 +21,11 @@
      <!--search bar-->
     <section class="container">
        <form id="search-form">
-         <input type="text" id="search-input" placeholder="Search for books..." required>
+         <input type="text" id="search-input" placeholder="Search for books..."required>
          <button type="submit">Search</button>
        </form>
 
-       <div class="books-result">
+       <div id="books" class="books">
         <!--books results will appear here-->
        </div>
     </section>
@@ -36,6 +36,10 @@
       <ul id="cart-list">
          <li>No items in cart yet.</li>
       </ul>
+      <p>
+        <b>Total :</b> Ksh <span id="total-price">0</span>
+      </p>
+      <button type="submit" id="checkout-btn" >Checkout</button>
     </section>
     </div>
 
