@@ -100,3 +100,18 @@ darkModeToggle.addEventListener("click", () => {
         darkModeToggle.textContent = "Dark mode";
     }
 });
+
+
+//  Checkout function alert
+checkoutBtn.addEventListener("click", () => {
+    if (cart.length === 0) {
+        alert("Your cart is empty. Please add some books first.");
+    } else {
+        alert(`Thank you for your purchase☺️! Your Total is KES: ${total}.`);
+
+        cart = [];
+        total = 0;
+        displayCart();
+    }
+});
+
