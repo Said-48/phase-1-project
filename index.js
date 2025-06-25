@@ -89,3 +89,14 @@ function displayCart() {
     totalPriceElement.textContent = total;
 }
 
+// Toggle dark mode
+darkModeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    // Change button text either from darl or light mode
+    if (document.body.classList.contains("dark-mode")) {
+        darkModeToggle.textContent = "Light mode";
+    } else {
+        darkModeToggle.textContent = "Dark mode";
+    }
+});
